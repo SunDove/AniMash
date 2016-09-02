@@ -60,9 +60,11 @@ function pageLoad(){
 	setRandomPictures();
 }
 
+var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
+
 jQuery(document).ready(function($){
-	$("#pic1").bind('touchstart click', choosePicOne);
-	$("#pic2").bind('touchstart click', choosePicTwo);
+	$("#pic1").bind(clickHandler, choosePicOne);
+	$("#pic2").bind(clickHandler, choosePicTwo);
 });
 
 function choosePicOne(){
