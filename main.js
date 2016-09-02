@@ -63,8 +63,8 @@ function pageLoad(){
 var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
 
 jQuery(document).ready(function($){
-	$("#pic1").bind(clickHandler, choosePicOne);
-	$("#pic2").bind(clickHandler, choosePicTwo);
+	$("#pic1").on(clickHandler, choosePicOne);
+	$("#pic2").on(clickHandler, choosePicTwo);
 });
 
 function choosePicOne(e){
