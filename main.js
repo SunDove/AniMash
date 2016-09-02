@@ -80,7 +80,7 @@ function choosePicTwo(e){
 		answered = true;
 		updateScores(selectedTwo, selectedOne);
 	}
-	//location.reload();
+	location.reload();
 }
 
 function updateScores(winner, loser){
