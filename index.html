@@ -42,8 +42,8 @@
   			var e2 = r2/(r1+r2);
   			var s1 = 1;
   			var s2 = 0;
-  			var newR1 = winScore + (s1-e1);
-  			var newR2 = loseScore + (s2-e2);
+  			var newR1 = winScore + 10*(s1-e1);
+  			var newR2 = loseScore + 10*(s2-e2);
   			ref.set(newR1);
   			ref2.set(newR2);
   			setTimeout(function(){
