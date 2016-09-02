@@ -8,7 +8,7 @@ var images = {
 	g:"https://i.imgur.com/Ti0ByI7.jpg",
 	h:"https://imgur.com/39RxiTu.jpg",
 	i:"https://imgur.com/SazaHUq.jpg",
-	j:"httpss://i.reddituploads.com/969da38bd02b48feb81a9cf0a13ee3e1?fit=max&h=1536&w=1536&s=63bbd6c6cb363a30530d66f2149b435c",
+	j:"https://i.imgur.com/rt9k95e.jpg",
 	k:"https://imgur.com/Cjn6NfS.jpg",
 	l:"https://imgur.com/zpTu0Te.jpg",
 	m:"https://imgur.com/nLAYa86.jpg",
@@ -61,8 +61,8 @@ function pageLoad(){
 }
 
 jQuery(document).ready(function($){
-	$("#pic1").bind('tap click', choosePicOne);
-	$("#pic2").bind('tap click', choosePicTwo);
+	$("#pic1").bind('touchstart click', choosePicOne);
+	$("#pic2").bind('touchstart click', choosePicTwo);
 });
 
 function choosePicOne(){
