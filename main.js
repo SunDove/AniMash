@@ -68,12 +68,11 @@ jQuery(document).ready(function($){
 });
 
 function choosePicOne(e){
-	alert("Clicked!");
 	if (!answered){
 		answered = true;
 		updateScores(selectedOne, selectedTwo);
 	}
-	//location.reload();
+	location.reload();
 }
 
 function choosePicTwo(e){
