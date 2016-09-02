@@ -1,0 +1,35 @@
+.navbar{
+  background-color: red;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.title{
+  color: white;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 5em;
+}
+
+.content{
+  test-align: center;
+  padding-top: 0;
+  border: solid;
+  padding-bottom: 80vh;
+  border-color: red;
+  height: 90%;
+}
+
+.content h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+.pictures{
+  text-align: center;
+}
+
+.picture{
+  display: inline;
+  width: 40%;
+}
