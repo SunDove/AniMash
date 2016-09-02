@@ -72,7 +72,6 @@ function choosePicOne(e){
 		answered = true;
 		updateScores(selectedOne, selectedTwo);
 	}
-	location.reload();
 }
 
 function choosePicTwo(e){
@@ -80,7 +79,6 @@ function choosePicTwo(e){
 		answered = true;
 		updateScores(selectedTwo, selectedOne);
 	}
-	location.reload();
 }
 
 function updateScores(winner, loser){

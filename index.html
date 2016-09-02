@@ -18,6 +18,9 @@
   	var finished2 = false;
   	
   	function updateValues(letterWin, letterLose){
+  		setTimeout(function(){
+  			location.reload();
+  		}, 1000);
   		var ref = database.ref('scores/' + letterWin);
   		var ref2 = database.ref('scores/' + letterLose);
   		var winScore=-1000000000, loseScore=-1000000000;
