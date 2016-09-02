@@ -67,7 +67,8 @@ jQuery(document).ready(function($){
 	$("#pic2").bind(clickHandler, choosePicTwo);
 });
 
-function choosePicOne(){
+function choosePicOne(e){
+	alert("Clicked!");
 	if (!answered){
 		answered = true;
 		updateScores(selectedOne, selectedTwo);
@@ -75,7 +76,7 @@ function choosePicOne(){
 	//location.reload();
 }
 
-function choosePicTwo(){
+function choosePicTwo(e){
 	if (!answered){
 		answered = true;
 		updateScores(selectedTwo, selectedOne);
