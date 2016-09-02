@@ -21,31 +21,38 @@ var images = {
 	t:"http://i.imgur.com/3C1StJZ.jpg"
 };
 
+var selectedOne = "";
+var selectedTwo = "";
+var answered = false;
+
+/*
 // Initialize Firebase
-var config = {
+firebase.intializeApp({
 	apiKey: "AIzaSyBm7UhEYhynvXHPdwWItD9-kDi1LvdLBnM",
 	authDomain: "animash-81a89.firebaseapp.com",
 	databaseURL: "https://animash-81a89.firebaseio.com",
 	storageBucket: "",
-};
-firebase.initializeApp(config);
+});
+var dbRef = firebase.dataBase().ref().child("scores");
+
+//var ref = new Firebase("https://animash-81a89.firebaseio.com/scores")
+*/
 
 function setRandomPictures(){
 	var picture1 = document.getElementById("pic1");
 	var picture2 = document.getElementById("pic2");
-	var firstKey = getRandomValue(images, "");
-	picture1.src = firstKey;
-	console.log("Got Here");
-	picture2.src = getRandomValue(images, firstKey);
+	selectedOne = getRandomValue(images, "");
+	picture1.src = images[selectedOne];
+	selectedTwo = getRandomValue(images, selectedOne);
+	picture2.src = images[selectedTwo];
 }
 
 function getRandomValue(object, cantBe) {
   var keys = Object.keys(object);
-  var key = object[keys[Math.floor(keys.length * Math.random())]];
+  var key = keys[Math.floor(keys.length * Math.random())];
   while (key == cantBe){
-  	key = object[keys[Math.floor(keys.length * Math.random())]];
+  	key = keys[Math.floor(keys.length * Math.random())];
   }
-  console.log(key);
   return key;
 };
 
@@ -54,11 +61,23 @@ function pageLoad(){
 }
 
 function choosePicOne(){
-	location.reload();
+	if (!answered){
+		answered = true;
+		updateScores(selectedOne, selectedTwo);
+	}
+	//location.reload();
 }
 
 function choosePicTwo(){
-	location.reload();
+	if (!answered){
+		answered = true;
+		updateScores(selectedTwo, selectedTwo);
+	}
+	//location.reload();
+}
+
+function updateScores(winner, loser){
+	updateValues(winner, loser);
 }
 
   
