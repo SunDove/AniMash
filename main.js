@@ -1,24 +1,24 @@
 var images = {
-	a:"http://imgur.com/Xs7Qy2F.jpg",
-	b:"http://imgur.com/n72bKGj.jpg",
-	c:"http://imgur.com/u5JZFTg.jpg",
-	d:"http://imgur.com/M03Q0h6.jpg",
-	e:"http://imgur.com/s8duR8f.jpg",
-	f:"http://imgur.com/KuUE42p.jpg",
-	g:"http://i.imgur.com/Ti0ByI7.jpg",
-	h:"http://imgur.com/39RxiTu.jpg",
-	i:"http://imgur.com/SazaHUq.jpg",
-	j:"https://i.reddituploads.com/969da38bd02b48feb81a9cf0a13ee3e1?fit=max&h=1536&w=1536&s=63bbd6c6cb363a30530d66f2149b435c",
-	k:"http://imgur.com/Cjn6NfS.jpg",
-	l:"http://imgur.com/zpTu0Te.jpg",
-	m:"http://imgur.com/nLAYa86.jpg",
-	n:"http://i.imgur.com/q35FfV2.jpg",
-	o:"http://i.imgur.com/pEgeMPC.jpg",
-	p:"http://imgur.com/OltxF2x.jpg",
-	q:"http://25.media.tumblr.com/tumblr_mb50xf8S9c1rgw39go1_500.jpg",
-	r:"http://i.imgur.com/zYrDjNp.jpg",
-	s:"http://imgur.com/piSCzuZ.jpg",
-	t:"http://i.imgur.com/3C1StJZ.jpg"
+	a:"https://imgur.com/Xs7Qy2F.jpg",
+	b:"https://imgur.com/n72bKGj.jpg",
+	c:"https://imgur.com/u5JZFTg.jpg",
+	d:"https://imgur.com/M03Q0h6.jpg",
+	e:"https://imgur.com/s8duR8f.jpg",
+	f:"https://imgur.com/KuUE42p.jpg",
+	g:"https://i.imgur.com/Ti0ByI7.jpg",
+	h:"https://imgur.com/39RxiTu.jpg",
+	i:"https://imgur.com/SazaHUq.jpg",
+	j:"httpss://i.reddituploads.com/969da38bd02b48feb81a9cf0a13ee3e1?fit=max&h=1536&w=1536&s=63bbd6c6cb363a30530d66f2149b435c",
+	k:"https://imgur.com/Cjn6NfS.jpg",
+	l:"https://imgur.com/zpTu0Te.jpg",
+	m:"https://imgur.com/nLAYa86.jpg",
+	n:"https://i.imgur.com/q35FfV2.jpg",
+	o:"https://i.imgur.com/pEgeMPC.jpg",
+	p:"https://imgur.com/OltxF2x.jpg",
+	q:"https://25.media.tumblr.com/tumblr_mb50xf8S9c1rgw39go1_500.jpg",
+	r:"https://i.imgur.com/zYrDjNp.jpg",
+	s:"https://imgur.com/piSCzuZ.jpg",
+	t:"https://i.imgur.com/3C1StJZ.jpg"
 };
 
 var selectedOne = "";
@@ -61,10 +61,9 @@ function pageLoad(){
 }
 
 jQuery(document).ready(function($){
-	$("#pic1").bind('touchstart click', choosePicOne);
-	$("#pic2").bind('touchstart click', choosePicTwo);
+	$("#pic1").bind('tap click', choosePicOne);
+	$("#pic2").bind('tap click', choosePicTwo);
 });
-
 
 function choosePicOne(){
 	if (!answered){
