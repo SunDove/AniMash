@@ -60,6 +60,12 @@ function pageLoad(){
 	setRandomPictures();
 }
 
+jQuery(document).ready(function($){
+	$("#pic1").bind('touchstart click', choosePicOne);
+	$("#pic2").bind('touchstart click', choosePicTwo);
+});
+
+
 function choosePicOne(){
 	if (!answered){
 		answered = true;
@@ -71,7 +77,7 @@ function choosePicOne(){
 function choosePicTwo(){
 	if (!answered){
 		answered = true;
-		updateScores(selectedTwo, selectedTwo);
+		updateScores(selectedTwo, selectedOne);
 	}
 	//location.reload();
 }
