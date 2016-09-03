@@ -12,12 +12,12 @@
 }
 
 .content{
-  test-align: center;
+  text-align: center;
   padding-top: 0;
   border: solid;
   padding-bottom: 80vh;
   border-color: red;
-  height: 90%;
+  height: 100%;
 }
 
 .content h1{
@@ -31,5 +31,11 @@
 
 .picture{
   display: inline;
-  width: 40%;
+  height: 50vh;
+}
+
+body{
+  height: 80vh;
+  width: 80vw;
+  margin-left:10vw;
 }
