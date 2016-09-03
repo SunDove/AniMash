@@ -32,7 +32,15 @@ var images = {
 	ae:"https://i.imgur.com/LxfH5TS.jpg",
 	af:"https://i.imgur.com/aJ57CAj.jpg",
 	ag:"https://i.imgur.com/lF2bRr4.jpg",
-	ah:"https://i.imgur.com/l6YYjS5.jpg"
+	ah:"https://i.imgur.com/l6YYjS5.jpg",
+	ai:"https://i.imgur.com/PAipAua.jpg",
+	aj:"https://i.imgur.com/taQwJ.jpg",
+	ak:"https://farm4.staticflickr.com/3712/11976401766_43411beeb7_o.jpg",
+	al:"https://imgur.com/bmQfPwx.jpg",
+	am:"https://i.imgur.com/Bot3FKa.jpg",
+	an:"https://i.imgur.com/4EffW9n.jpg",
+	ao:"https://i.imgur.com/HzkX5fb.jpg",
+	ap:"https://imgur.com/mY4lV.jpg"
 };
 
 var selectedOne = "";
