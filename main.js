@@ -18,7 +18,21 @@ var images = {
 	q:"https://25.media.tumblr.com/tumblr_mb50xf8S9c1rgw39go1_500.jpg",
 	r:"https://i.imgur.com/zYrDjNp.jpg",
 	s:"https://imgur.com/piSCzuZ.jpg",
-	t:"https://i.imgur.com/3C1StJZ.jpg"
+	t:"https://i.imgur.com/3C1StJZ.jpg",
+	u:"https://i.imgur.com/hhUFv.png",
+	v:"https://imgur.com/nDJj7ik.jpg",
+	w:"https://imgur.com/obVcb.jpg",
+	x:"https://i.imgur.com/NZ1TzHh.jpg",
+	y:"https://i.imgur.com/iH6UqVf.jpg",
+	z:"https://imgur.com/3lzDlmj.jpg",
+	aa:"https://imgur.com/urMXQm5.jpg",
+	ab:"https://imgur.com/2bNKnKX.jpg",
+	ac:"https://i.imgur.com/A4G7i9H.jpg",
+	ad:"https://i.imgur.com/mXkeaEG.jpg",
+	ae:"https://i.imgur.com/LxfH5TS.jpg",
+	af:"https://i.imgur.com/aJ57CAj.jpg",
+	ag:"https://i.imgur.com/lF2bRr4.jpg",
+	ah:"https://i.imgur.com/l6YYjS5.jpg"
 };
 
 var selectedOne = "";
